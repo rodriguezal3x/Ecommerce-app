@@ -64,7 +64,7 @@ const Navbar = () => {
         <Container >
             <Wrapper>
                 <Left>
-                    <Language>EN</Language>
+                    <Language>Es</Language>
                     <SearchContainer>
                         <Input/>
                         <Search style={{color:"gray", fontsize: 16,}} />
@@ -74,8 +74,8 @@ const Navbar = () => {
                     <Logo>Camila's Store</Logo>
                 </Center>
                 <Right>
-                    <MenuItem>Register</MenuItem>
-                    <MenuItem>Sing In</MenuItem>
+                    <MenuItem>Registro</MenuItem>
+                    <MenuItem>Login</MenuItem>
                     <MenuItem>
                         <Badge badgeContent={4} color="primary">
                             <ShoppingCartOutlined />

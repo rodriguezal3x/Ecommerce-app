@@ -3,7 +3,7 @@ import React from 'react'
 
 const Container = styled.div`
     height: 30px;
-    background-color: teal;
+    background-color: #A3C4F3;
     color: white;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@ const Container = styled.div`
 const Announcement = () => {
     return (
         <Container>
-            Oferta Especial Envio Gratis!!!
+            Oferta Especial Envio Gratis en Todo el Pais!!!
         </Container>
     )
 }
