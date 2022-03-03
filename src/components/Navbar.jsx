@@ -43,7 +43,6 @@ const Center =styled.div`
 const Logo = styled.h1`
     font-weight: bold;
     font-size: 40px;
-    // font-family: 'The Nautigal', cursive;
     font-family: 'Vujahday Script', cursive;
 `
 const Right =styled.div`
