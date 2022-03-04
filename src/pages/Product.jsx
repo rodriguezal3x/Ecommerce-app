@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Announcement  from '../components/Announcement';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
+import { Add, Remove } from '@material-ui/icons';
 
 const Container = styled.div``;
 
@@ -76,6 +77,44 @@ const FilterSize = styled.select`
 
 const FilterSizeOption = styled.option`
 `;
+const AddContainer = styled.div`
+    width : 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+`;
+
+const AmountContainer = styled.div`
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+`;
+
+const Amount = styled.span`
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px; 
+`;
+
+const Button = styled.button`
+    padding: 15px;
+    border: 1px solid teal;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+
+    &:hover{
+        background-color: teal;
+        border: 1px solid Black;
+
+    }
+`;
 
 
 const Product = () => {
@@ -90,7 +129,8 @@ const Product = () => {
             <InfoContainer>
                 <Title>Air Nike Jordan</Title>
                 <SubTitle>Black Gold</SubTitle>
-                <Desc>Lorem Ipsum es simplemente un texto ficticio de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto ficticio estándar de la industria desde el año 1500, cuando un impresor desconocido tomó una galera de tipos y la codificó para hacer un libro de muestras tipográficas. Ha sobrevivido no solo cinco siglos</Desc>
+                <Desc>
+                Volvamos a los días universitarios de MJ. Como estudiante atleta en Chapel Hill, Michael no solo protagonizó la cancha, sino que también se unió a una de las fraternidades afroamericanas más históricas. Ahora, la vitalidad de ese vínculo de toda la vida irradia a través de este último Air Jordan 1. Celebrando el tiempo de MJ con sus hermanos de la fraternidad, una parte superior de University Gold y Light Bordeaux cubre el estilo para una combinación de colores AJ1 completamente nueva                </Desc>
                 <Price>$ 20</Price>
                 <FilterContainer>
                     <Filter>
@@ -111,6 +151,14 @@ const Product = () => {
                         </FilterSize>
                     </Filter>
                 </FilterContainer>
+                <AddContainer>
+                    <AmountContainer>
+                        <Remove/>
+                        <Amount>1</Amount>
+                        <Add/>
+                    </AmountContainer>
+                    <Button>Lo Quiero</Button>
+                </AddContainer>
             </InfoContainer>
         </Wrapper>
         <Newsletter/>
