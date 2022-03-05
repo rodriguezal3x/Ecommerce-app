@@ -78,7 +78,7 @@ const FilterSize = styled.select`
 const FilterSizeOption = styled.option`
 `;
 const AddContainer = styled.div`
-    width : 70%;
+    width : 50%;
     display: flex;
     align-items: center;
     justify-content: space-between; 
