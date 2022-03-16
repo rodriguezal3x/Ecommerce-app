@@ -4,6 +4,7 @@ import {
     ShoppingCartOutlined,
 } from "@material-ui/icons"
 import styled from 'styled-components';
+import { mobile } from "../responsive";
 
 const Info = styled.div`
     opacity: 0;
@@ -29,11 +30,13 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #d7bdff;
+    // background-color: #d7bdff;
     position: relative;
     &:hover ${Info}{
         opacity: 1;
     }
+    ${mobile({ minWidth: "35vw",
+     height: "27vh"})};
 `;
 
 const Circle = styled.div`
@@ -42,11 +45,15 @@ const Circle = styled.div`
     border-radius: 50%;
     background-color: #ffffff;
     position: absolute;
+    ${mobile({ display: "none"})};
 `;
 
 const Image = styled.img`
-    height: 85%;
-    z-index: 2;   
+    height: 90%;
+    width: 90%;
+    z-index: 2;
+    ${mobile({ height: "90%",
+     width: "90%"})};   
 `;
 
 const Icon = styled.div`
@@ -62,7 +69,10 @@ const Icon = styled.div`
     &:hover {
         background-color: #e9f5f5;
         transform: scale(1.1);
-    }
+    };
+    ${mobile({ height: "30px",
+    width: "30px",
+    margin: "5px"})};
 `;
 
 const Product = ({item}) => {
